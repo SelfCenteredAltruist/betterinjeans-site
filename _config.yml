@@ -1,0 +1,45 @@
+title: "Better In Jeans"
+description: "You get what you give."
+theme: minima
+
+# URL settings (GitHub Pages will set these automatically)
+# Replace <username> and <repo> if you want explicit control:
+# url: "https://<username>.github.io"
+# baseurl: "/<repo>"
+
+markdown: kramdown
+highlighter: rouge
+
+permalink: /:year/:month/:day/:title/
+
+# Minima theme settings
+minima:
+  skin: classic
+  social_links:
+    github: SelfCenteredAltruist
+
+url: "https://selfcenteredaltruist.github.io"
+baseurl: ""
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude files you don't want processed
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
