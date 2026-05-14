@@ -292,7 +292,7 @@ hr {
   left: -40px;
   width: 260px;
   height: 260px;
-  background-image: url("{{ '/assets/betterinjeans.jpg' | relative_url }}");
+  background-image: url("{{ '/assets/betterinjeans.svg' | relative_url }}");
   background-size: contain;
   background-repeat: no-repeat;
   opacity: 0.06;
