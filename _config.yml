@@ -19,7 +19,7 @@ minima:
     github: SelfCenteredAltruist
 
 url: "https://selfcenteredaltruist.github.io"
-baseurl: ""
+baseurl: "/better-in-jeans"
 
 # Plugins supported by GitHub Pages
 plugins:
