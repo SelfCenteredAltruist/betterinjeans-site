@@ -18,8 +18,8 @@ minima:
   social_links:
     github: SelfCenteredAltruist
 
-url: "https://selfcenteredaltruist.github.io"
-baseurl: "/betterinjeans-site"
+url: "https://betterinjeans.com"
+baseurl: ""   # MUST be empty for custom domains
 
 # Plugins supported by GitHub Pages
 plugins:
