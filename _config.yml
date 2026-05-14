@@ -19,7 +19,7 @@ minima:
     github: SelfCenteredAltruist
 
 url: "https://selfcenteredaltruist.github.io"
-baseurl: "/better-in-jeans"
+baseurl: "/betterinjeans-site"
 
 # Plugins supported by GitHub Pages
 plugins:
@@ -31,10 +31,6 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-
-collections:
-  posts:
-    output: true
 
 defaults:
   - scope:
