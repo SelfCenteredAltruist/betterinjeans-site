@@ -23,6 +23,7 @@
   margin: 0 auto;
   line-height: 1.6;
 }
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #1c1c1c;
@@ -55,6 +56,7 @@
     color: #aaa;
   }
 }
+
 .nav {
   text-align: center;
   margin-bottom: 1rem;
@@ -70,15 +72,6 @@
 
 .nav a:hover {
   color: #000;
-}
-.post-list li {
-  margin: 0.5rem 0;
-}
-
-.post-date {
-  color: #888;
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
 }
 
 hr {
@@ -108,6 +101,103 @@ hr {
   font-size: 0.85rem;
   color: #999;
 }
+.tag-link {
+  font-family: "Georgia", serif;
+  font-size: 0.85rem;
+  color: #555;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+.tag-link:hover {
+  text-decoration: underline;
+}
+
+/* Tag list */
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.tag-list li {
+  margin: 0.4rem 0;
+  font-size: 1.1rem;
+}
+
+.tag-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.tag-link:hover {
+  text-decoration: underline;
+}
+
+.tag-count {
+  color: #888;
+  margin-left: 0.4rem;
+}
+
+/* Tag cloud */
+.tag-cloud {
+  margin-top: 2rem;
+  line-height: 2.2rem;
+}
+
+.tag-cloud-item {
+  margin-right: 0.6rem;
+  text-decoration: none;
+  color: #555;
+}
+
+.tag-cloud-item:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* post-content styles */
+
+.post-content {
+  font-family: "Georgia", serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.post-list li {
+  margin: 0.5rem 0;
+}
+
+.post-item {
+  margin-bottom: 1rem;
+}
+
+.post-item a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #222;
+}
+
+.post-item a:hover {
+  text-decoration: underline;
+}
+
+.post-date {
+  font-family: "Georgia", serif;
+  font-size: 0.95rem;
+  color: #777;
+  margin: 0 0 1rem;
+}
+
+
 .post-header {
   margin-bottom: 2rem;
   text-align: left;
@@ -121,31 +211,7 @@ hr {
   color: #222;
 }
 
-.post-date {
-  font-family: "Georgia", serif;
-  font-size: 0.95rem;
-  color: #777;
-  margin: 0 0 1rem;
-}
-
 .post-tags {
   margin: 0 0 1rem;
 }
 
-.tag-link {
-  font-family: "Georgia", serif;
-  font-size: 0.85rem;
-  color: #555;
-  margin-right: 0.5rem;
-  text-decoration: none;
-}
-
-.tag-link:hover {
-  text-decoration: underline;
-}
-
-.post-content {
-  font-family: "Georgia", serif;
-  line-height: 1.7;
-  color: #333;
-}
