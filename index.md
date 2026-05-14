@@ -4,6 +4,7 @@ title: Home
 ---
 
 <div class="hero">
+  <img src="{{ '/assets/betterinjeans.jpg' | relative_url }}" alt="Better in Jeans" class="hero-image">
   <h1 class="hero-title">Better in Jeans</h1>
   <p class="hero-subtitle">
     What finds its way back always finds me better in jeans - authentic inevitability

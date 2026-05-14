@@ -24,6 +24,13 @@
   line-height: 1.6;
 }
 
+.hero-image {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: #1c1c1c;
@@ -159,10 +166,14 @@ hr {
 
 /* post-content styles */
 
+/* --- Content --- */
 .post-content {
   font-family: "Georgia", serif;
-  line-height: 1.7;
+  font-size: 1.15rem;
+  line-height: 1.75;
   color: #333;
+  max-width: 650px;
+  padding-bottom: 4rem;
 }
 
 .post-list {
@@ -198,20 +209,97 @@ hr {
 }
 
 
+/* --- Sigil watermark behind title --- */
 .post-header {
-  margin-bottom: 2rem;
-  text-align: left;
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: 2rem;
 }
 
+/* --- Title styling --- */
 .post-title {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 2.2rem;
-  font-weight: 300;
-  margin: 0 0 0.5rem;
+  position: relative;
+  z-index: 2;
+  font-family: "Georgia", serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
   color: #222;
+  margin-bottom: 1rem;
 }
+
 
 .post-tags {
   margin: 0 0 1rem;
 }
+
+/* --- Floating left meta column --- */
+.post {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.post-meta-column {
+  width: 180px;
+  flex-shrink: 0;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #777;
+}
+
+.meta-inner {
+  position: sticky;
+  top: 4rem;
+}
+
+.meta-date {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.meta-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.meta-tag {
+  font-size: 0.8rem;
+  color: #555;
+  text-decoration: none;
+}
+
+.meta-tag:hover {
+  color: #000;
+}
+
+/* --- Sigil above title --- */
+.post-sigil {
+  width: 70px;
+  opacity: 0.85;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+
+.post-sigil-watermark {
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  width: 260px;
+  height: 260px;
+  background-image: url('/assets/betterinjeans.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(1px);
+}
+
+
 
